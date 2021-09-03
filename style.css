@@ -5,33 +5,76 @@
 .navbar {
   position: fixed;
   width: 100vw;
-  top: 0;
 }
 .nav-link {
   text-decoration: none;
   color: black;
 }
 
-section {
+.nav-item {
+  list-style: none;
+  display: inline;
+  margin: 10px;
+}
+
+.fa-linkedin {
+  color: #0e76a8;
+}
+
+.fa-github-square {
+  color: #333;
+}
+
+.list-header {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.list-languages {
+  padding: 0;
+}
+
+.list-languages-item {
+  list-style: none;
+  text-align: center;
+}
+
+.row {
   margin-bottom: 20vh;
+}
+
+.list-socials {
+  padding: 0;
 }
 
 label {
   margin: 1vh;
 }
-.contact-text {
-  font-size: 2rem;
+
+.projects-header {
+  margin-bottom: 10vh;
 }
+
 .intro-content {
   height: 1vh;
 }
 
-.col-6 {
-  text-align: center;
+.contact-header {
+  margin-bottom: 5vh;
+}
+
+.form-control {
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.form-contact {
+  justify-content: center;
 }
 
 .intro-content--text {
-  font-size: 5vh;
+  font-size: 4vh;
   text-align: center;
 }
 
@@ -48,6 +91,11 @@ label {
   color: black;
 }
 
-p {
-  font-size: 2rem;
+.p-text {
+  font-size: 1.5rem;
+}
+
+.submit-button {
+  padding: 5px;
+  border-radius: 10px;
 }

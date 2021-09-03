@@ -11,6 +11,7 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+
     <!-- FONTAWESOME ICONS -->
     <script
       src="https://kit.fontawesome.com/2aea4f3274.js"
@@ -18,7 +19,12 @@
     ></script>
     <link rel="stylesheet" href="/style.css" />
     <title>jmo</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="./images/favicon.ico" style="color: white">
   </head>
+
+
   <body>
     <header>
     <!-- NAV BAR -->
@@ -62,58 +68,150 @@
     </div>
 
     <!-- ABOUT ME SECTION -->
-    <section class="section about" >
-    <div class="container ">
-      <div class="col-7" >
-        <h1 id="about">About Me</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sed quaerat iste dolor labore beatae hic consequuntur cum tempore facere quisquam dolorem ipsa voluptates, repellat cupiditate impedit ea optio ratione neque? Recusandae soluta harum distinctio aliquid voluptatem tempora perspiciatis iusto laudantium necessitatibus ipsum minus, suscipit, odit, placeat quisquam et incidunt?</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h1 id="about" class="section-header">About Me</h1>
+        </div>
+        <div class="col-7">
+          <p class="p-text">I'm a full-stack developer currently pursuing my B.S. in Computer Science at UC Davis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sed voluptate reprehenderit iste ex nobis mollitia! Optio eligendi rerum vero quisquam, cumque quod commodi ut illo saepe accusamus dicta exercitationem id molestias assumenda! Quae quisquam quaerat numquam voluptates ratione est dicta delectus assumenda omnis odio libero esse, dignissimos expedita ab.</p>
+        </div>
       </div>
     </div>
-    </section>
+
   
     <!-- SKILLS SECTION -->
-    <section class="section skills">
-    <div class="container ">
-      <div class="col-7">
-        <h1 id="skills">Skills</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sed quaerat iste dolor labore beatae hic consequuntur cum tempore facere quisquam dolorem ipsa voluptates, repellat cupiditate impedit ea optio ratione neque? Recusandae soluta harum distinctio aliquid voluptatem tempora perspiciatis iusto laudantium necessitatibus ipsum minus, suscipit, odit, placeat quisquam et incidunt?</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h1 id="about" class="section-header">Skills</h1>
+        </div>
+        <div class="col-2 skills-column">
+          <h6 class="list-header">Languages</h6>
+          <ul class="list-languages">
+            <li class="list-languages-item">C++</li>
+            <li class="list-languages-item">Java</li>
+            <li class="list-languages-item">HTML</li>
+            <li class="list-languages-item">CSS</li>
+            <li class="list-languages-item">Python</li>
+            <li class="list-languages-item">Javascript</li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h6 class="list-header">Frameworks</h6>
+          <ul class="list-languages">
+            <li class="list-languages-item">Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="col-2">
+          <h6 class="list-header">Tools</h6>
+          <ul class="list-languages">
+            <li class="list-languages-item">GitHub</li>
+          </ul>
+        </div>
       </div>
     </div>
-    </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="section skills">
-    <div class="container ">
-      <div class="col-7">
-        <h1 id="projects">Projects</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sed quaerat iste dolor labore beatae hic consequuntur cum tempore facere quisquam dolorem ipsa voluptates, repellat cupiditate impedit ea optio ratione neque? Recusandae soluta harum distinctio aliquid voluptatem tempora perspiciatis iusto laudantium necessitatibus ipsum minus, suscipit, odit, placeat quisquam et incidunt?</p>
+    <div class="container-fluid text-center projects-header">
+      <h1 id="projects">Projects</h1>
+    </div>
+
+    <div class="container">
+      <!-- FIRST ROW -->
+      <div class="row">
+
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">A* Pathfinder Visualization</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">A* Pathfinder Visualization</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">A* Pathfinder Visualization</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">A* Pathfinder Visualization</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
+              </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    </section>
 
     <!-- CONTACT ME SECTION -->
-    <section class="section contact">
-    <div class="container ">
-      <div class="col-7">
-        <h1 id="contact">Contact Me</h1>
-        <form
-  action="https://formspree.io/f/mdoyyzqa"
-  method="POST"
->
-  <label class="contact-text">
-    Your email:
-    <input type="email" name="_replyto">
-  </label>
-  <label class="contact-text">
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-      </div>
+
+    <div class="container-fluid text-center contact-header">
+      <h1 id="contact">Contact Me</h1>
     </div>
-    </section>
-    
+    <div class="container contact-container">
+        <div class="row">
+          <div class="col-3">
+            <!-- LEFT OFFSET -->
+          </div>
+
+          <div class="col-6 text-center">
+            <!-- FORM -->
+            <form action="https://formspree.io/f/mdoyyzqa" method="POST" class="form-contact text-center">
+              <div class="form-group">
+          <input name="_replyto" type="email" class="form-control" id="exampleInputEmail1" 
+          aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+
+        <div class="form-group">
+          <textarea name="message "class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+          </div>
+        </div>
+    </div>
+
+    <!-- SOCIALS RIBBON -->
+  <div class="container text-center socials-container">
+      <ul class="list-socials">
+        <li class="nav-item nav-item-linkedin">
+          <a href="https://www.linkedin.com/in/jehryn-rillon/" target="_blank">
+          <i class="fab fa-linkedin fa-3x"></i></a>
+        </li>
+        <li class="nav-item nav-item-github">
+          <a href="https://github.com/jmo-gh" target="_blank">
+            <i class="fab fa-github-square fa-3x"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
   </body>
 </html>
