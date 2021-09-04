@@ -35,6 +35,14 @@
   padding: 0;
 }
 
+.a-signature {
+  text-decoration: none;
+  color: black;
+}
+.p-signature {
+  text-align: center;
+}
+
 .list-languages-item {
   list-style: none;
   text-align: center;
@@ -46,6 +54,10 @@
 
 .list-socials {
   padding: 0;
+}
+
+.signature-container {
+  height: 100px;
 }
 
 label {
