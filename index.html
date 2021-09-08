@@ -27,13 +27,15 @@
 
   <body>
     <header>
-    <!-- NAV BAR -->
-    <nav class="navbar">
+      <a href="" id="home"></a>
+    <!-- NAV BAR HORIZONTAL -->
+    <nav class="navbar bg-dark">
       <div class="container-fluid">
         <div class="navbar-brand">
           <i class="fas fa-robot"></i>
-          <a href="#" class="navbar-brand-text">jmo</a>
+          <a href="#home" class="navbar-brand-text">jmo</a>
         </div>
+
         <ul class="nav justify-content-end">
           <li class="nav-item">
             <a href="#" class="nav-link" aria-current="page">Home</a>
@@ -48,21 +50,46 @@
             <a href="#contact" class="nav-link" aria-current="page">Contact Me</a>
           </li>
         </ul>
+
       </div>
     </nav>
+
+
+    <!-- NAVBAR COLLAPSE -->
+    <a href="" id="home"></a>
+    <nav class="navbar navbar-expand-m navbar-dark bg-dark text-center" id="navbar-collapse">
+      <div class="container-fluid">
+      <div class="navbar-brand">
+      <i class="fas fa-robot"></i>
+  <a class="navbar-brand-text" href="#home">jmo</a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#home" style="color: lightgrey;">Home</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#about" style="color: lightgrey;">About Me</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#projects" style="color: lightgrey;">Projects</a>
+      </li>
+      <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+        <a class="nav-link" href="#contact" style="color: lightgrey;">Contact Me</a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
 </header>
 
     <!-- introduction -->
-    <div class="container">
-      <div
-        class="intro-content"
-        style="
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-        "
-      >
+    <div class="container-fluid">
+      <div class="intro-content">
         <h1 class="intro-content--text">
           Hi. I'm Jehryn Rillon, <br></br> but call me <strong>jmo</strong>. <br><br>
           <a class="btn btn-primary" href="#" role="button">
@@ -71,105 +98,161 @@
         </a>
         </h1>
       </div>
-      
     </div>
 
-    <!-- ABOUT ME SECTION -->
-    <div class="container">
+    <!-- ABOUT ME SECTION HORIZONTAL -->
+    <div class="container about-horz">
       <div class="row">
         <div class="col-3">
-          <h1 id="about" class="section-header">About Me</h1>
+          <span class="anchor-offset" id="about"></span>
+          <h1 class="section-header">About Me</h1>
         </div>
-        <div class="col-7">
-          <p class="p-text">I'm a full-stack developer currently pursuing my B.S. in Computer Science at UC Davis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus sed voluptate reprehenderit iste ex nobis mollitia! Optio eligendi rerum vero quisquam, cumque quod commodi ut illo saepe accusamus dicta exercitationem id molestias assumenda! Quae quisquam quaerat numquam voluptates ratione est dicta delectus assumenda omnis odio libero esse, dignissimos expedita ab.</p>
+        <div class="col">
+          <p class="p-text">I'm a full-stack developer pursuing my B.S. in Computer Science at UC Davis. Previously, I completed my A.S. in Mathematics at Solano Community College. I have a passion for learning new full-stack technologies and implementing them into my projects.</p>
         </div>
       </div>
     </div>
 
+
+    <!-- ABOUT ME SECTION VERTICAL -->
+    <div class="about-vert">
+    <div class="container-fluid text-center">
+      <span class="anchor-offset" id="about"></span>
+      <h1 class="section-header">About Me</h1>
+    </div>
+    <div class="container text-center">
+      <p class="p-text">I'm a full-stack developer pursuing my B.S. in Computer Science at UC Davis. Previously, I completed my A.S. in Mathematics at Solano Community College. I have a passion for learning new full-stack technologies and implementing them into my projects.</p>
+    </div>
+    </div>
   
-    <!-- SKILLS SECTION -->
-    <div class="container">
+    <!-- SKILLS SECTION HORIZONTAL-->
+    <div class="container skills-horz">
       <div class="row">
         <div class="col-3">
-          <h1 id="about" class="section-header">Skills</h1>
+          <h1 class="section-header">Skills</h1>
         </div>
-        <div class="col-2 skills-column">
-          <h6 class="list-header">Languages</h6>
+        <div class="col skills-column">
+          <h6 class="list-header">Languages
+          </h6>
           <ul class="list-languages">
             <li class="list-languages-item">C++</li>
+            <li class="list-languages-item">Python</li>
             <li class="list-languages-item">Java</li>
             <li class="list-languages-item">HTML</li>
             <li class="list-languages-item">CSS</li>
-            <li class="list-languages-item">Python</li>
-            <li class="list-languages-item">Javascript</li>
           </ul>
         </div>
 
-        <div class="col-2">
+        <div class="col">
           <h6 class="list-header">Frameworks</h6>
           <ul class="list-languages">
             <li class="list-languages-item">Bootstrap</li>
           </ul>
         </div>
 
-        <div class="col-2">
+        <div class="col">
           <h6 class="list-header">Tools</h6>
           <ul class="list-languages">
             <li class="list-languages-item">GitHub</li>
+            <li class="list-languages-item">VS Code</li>
+
           </ul>
         </div>
       </div>
     </div>
 
+    <!-- SKILLS SECTION VERTICAL -->
+    <div class="skills-vert">
+      <div class="container-fluid text-center">
+        <h1 class="section-header">Skills</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col skills-column">
+          <h6 class="list-header">Languages
+          </h6>
+          <ul class="list-languages">
+            <li class="list-languages-item">C++</li>
+            <li class="list-languages-item">Python</li>
+            <li class="list-languages-item">Java</li>
+            <li class="list-languages-item">HTML</li>
+            <li class="list-languages-item">CSS</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h6 class="list-header">Frameworks</h6>
+          <ul class="list-languages">
+            <li class="list-languages-item">Bootstrap</li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h6 class="list-header">Tools</h6>
+          <ul class="list-languages">
+            <li class="list-languages-item">GitHub</li>
+            <li class="list-languages-item">VS Code</li>
+
+          </ul>
+        </div>
+        </div>
+
+      </div>
+    </div>
+    
+
     <!-- PROJECTS SECTION -->
     <div class="container-fluid text-center projects-header">
-      <h1 id="projects">Projects</h1>
+      <span class="anchor-offset" id="projects"></span>
+      <h1>Projects</h1>
     </div>
 
     <div class="container">
       <!-- FIRST ROW -->
       <div class="row">
-
-        <div class="col-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col project1">
+          <div class="card">
             <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">A* Pathfinder Visualization</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
+                <a href="#" class="btn btn-success" target="_blank">Live Demo</a>
+              </div>
+          </div>
+        </div>
+        <div class="col project2">
+          <div class="card">
+            <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">A* Pathfinder Visualization</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
+                <a href="#" class="btn btn-success" target="_blank">Live Demo</a>
               </div>
           </div>
         </div>
 
-        <div class="col-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col project3">
+          <div class="card">
             <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">A* Pathfinder Visualization</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
+                <a href="#" class="btn btn-success" target="_blank">Live Demo</a>
               </div>
           </div>
         </div>
 
-        <div class="col-3">
-          <div class="card" style="width: 18rem;">
+        <div class="col project4">
+          <div class="card">
             <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">A* Pathfinder Visualization</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-3">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="/images/background intro.jpeg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">A* Pathfinder Visualization</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="https://github.com/jmo-gh/A-star-Pathfinder-Visualization" class="btn btn-primary" target="_blank">Source Code</a>
+                <a href="#" class="btn btn-success" target="_blank">Live Demo</a>
               </div>
           </div>
         </div>
@@ -180,7 +263,8 @@
     <!-- CONTACT ME SECTION -->
 
     <div class="container-fluid text-center contact-header">
-      <h1 id="contact">Contact Me</h1>
+      <span class="anchor-offset" id="contact"></span>
+      <h1>Contact Me</h1>
     </div>
     <div class="container contact-container">
         <div class="row">
@@ -229,5 +313,11 @@
     </a>
     
   </div>
+
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

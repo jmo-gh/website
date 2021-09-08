@@ -2,13 +2,34 @@
   margin: 0;
   padding: 0;
 }
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.anchor-offset {
+  scroll-margin-top: 100px;
+}
+
+div.container-fluid {
+  padding: 0;
+}
+
 .navbar {
   position: fixed;
+  overflow: hidden;
   width: 100vw;
+  z-index: 2;
 }
+
 .nav-link {
   text-decoration: none;
-  color: black;
+  color: lightgrey;
 }
 
 .nav-item {
@@ -27,6 +48,7 @@
 
 .list-header {
   font-size: 1.2rem;
+  font-style: italic;
   margin-top: 15px;
   text-align: center;
 }
@@ -86,9 +108,8 @@ label {
   text-align: center;
 }
 
-.fa-robot {
-  font-size: 1.5rem;
-  margin-right: 5px;
+div.navbar-brand {
+  margin: 0 15px;
 }
 
 .navbar-brand-text {
@@ -96,7 +117,7 @@ label {
   font-size: 2rem;
   font-weight: bolder;
   font-family: monospace;
-  color: black;
+  color: lightgrey;
 }
 
 .p-text {
@@ -106,4 +127,122 @@ label {
 .submit-button {
   padding: 5px;
   border-radius: 10px;
+}
+
+.fa-robot {
+  color: lightgrey;
+}
+
+div.intro-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+nav#navbar-collapse {
+  display: none;
+}
+
+.about-vert {
+  display: none;
+}
+
+.skills-vert {
+  display: none;
+}
+
+@media (max-width: 799.98px) {
+  nav.navbar {
+    display: none;
+  }
+
+  .col-3 {
+    margin: 0 60px;
+  }
+
+  div.skills-column {
+    margin-left: 0;
+  }
+
+  .navbar-brand-text {
+    color: lightgrey;
+  }
+
+  nav#navbar-collapse {
+    display: block;
+  }
+
+  .navbar-toggler {
+    margin: 0 20px;
+    color: white;
+  }
+
+  .fa-robot {
+    color: white;
+  }
+
+  .p-text {
+    font-size: 1.3rem;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .col-2 {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .list-header {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-horz {
+    display: none;
+  }
+
+  .about-vert {
+    display: block;
+    margin-bottom: 20vh;
+  }
+
+  .skills-horz {
+    display: none;
+  }
+
+  .skills-vert {
+    display: block;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .p-text {
+    font-size: 1.5rem;
+  }
+
+  .project3 {
+    display: none;
+  }
+
+  .section-header {
+    margin-bottom: 8vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project4 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .p-text {
+    font-size: 1.2rem;
+  }
 }
