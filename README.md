@@ -1,2 +1,2 @@
 # Personal Portfolio
-Personal website including information about me, my portfolio and a way to contact me.
+Personal website including information about me, my portfolio + source code, and a way to contact me.
